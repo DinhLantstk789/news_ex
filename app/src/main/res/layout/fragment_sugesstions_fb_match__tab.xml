@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".fragment.game.SugesstionsFbMatch_TabFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_filter">
+        <TextView
+            android:id="@+id/txtSugesstion_Match_Fragment_FilterDateSearch"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/bgbtnloginlogout"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#d62828"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/txtSugesstion_Match_Fragment_FilterDateSearch2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/bgbtnloginlogout"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#d62828"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_marginTop="-50dp"
+            android:id="@+id/img_none"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/none"/>
+        <TextView
+            android:id="@+id/txt_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không tìm thấy trận đấu nào gần đây."
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/Sugesstion_Match_Fragment_listMatch_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <ListView
+            android:id="@+id/lvSugesstion_Match_Fragment_ListMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    -->
+</LinearLayout>
